@@ -4,7 +4,7 @@
 #TODO: Add 'check' as fs_mgr_flags with data partition.
 # Currently we dont have e2fsck compiled. So fs check would failed.
 #<src>                                                <mnt_point>  <type>  <mnt_flags and options>                     <fs_mgr_flags>
-/dev/block/mmcblk0p43         /system      ext4    ro,barrier=1                                wait
+/dev/block/mmcblk0p43         /system      yaffs2    ro,barrier=1                                wait
 /dev/block/mmcblk0p44    /data        ext4    rw,discard,nosuid,nodev,noatime,nodiratime,noauto_da_alloc,nobarrier    wait,check,forceencrypt=/dev/block/platform/msm_sdcc.1/by-name/metadata
 /dev/block/mmcblk0p42       /cache       ext4    rw,noatime,nosuid,nodev,barrier=1,data=ordered   wait,check
 /dev/block/mmcblk0p40         /boot           ext4    defaults                                                        defaults

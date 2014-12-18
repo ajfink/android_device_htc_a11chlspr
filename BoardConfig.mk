@@ -20,7 +20,8 @@
 # definition file).
 #
 
-TARGET_OTA_ASSERT_DEVICE := a11chl,a11ul
+#TARGET_OTA_ASSERT_DEVICE := a11chl,a11ul
+TARGET_OTA_ASSERT_DEVICE := a11
 
 BOARD_VENDOR := htc
 
@@ -35,6 +36,7 @@ TARGET_NO_BOOTLOADER := true
 #Platform
 TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
+USE_OPENGL_RENDERER := false
 
 #Architecture
 TARGET_ARCH := arm
